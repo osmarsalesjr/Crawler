@@ -41,7 +41,7 @@
     nav ul li {
         padding: 2px;
         margin-right: 30px;
-    }
+        }
 
     nav {
         height: 95px;
@@ -102,7 +102,7 @@
 
 @media screen and (min-width: 1201px)  {
     header {
-        height: 700px;
+        height: 680px;
         background-size: 100%;
         background-repeat: no-repeat;
     }
@@ -189,14 +189,16 @@ input {
     font-style: italic;
 }
 
-input, header, .image-article, .img-one, .img-two, .img-three, .img-four, ul li, .tags-list li, .text-article h1, footer {
+input, .image-article, .img-one, .img-two, .img-three, .img-four, ul li, .tags-list li, .text-article h1, footer {
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 header {
     background-image: url('images/listening-music.jpg');
     border: 1px solid transparent;
     background-position: center;
+    text-align: center;
     box-sizing: border-box;
 }
 
