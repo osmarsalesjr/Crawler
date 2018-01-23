@@ -1,0 +1,379 @@
+@media screen and (max-width: 600px) {
+    header {
+        height: 330px;
+        background-size: 100%;
+    }
+
+    header h1 {
+        font-size: 24px;
+        padding: 70px 1px 1px 1px;
+    }
+
+    .full-article-main {
+        width: 90%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .article {
+        height: 350px;
+        width: 99%;
+    }
+
+    .image-article {
+        height: 55%;
+        width: 35%;
+    }
+
+    .image-full-article {
+        height: 250px;
+        width: 50%;
+    }
+
+    input {
+        padding: 2px;
+        margin-top: 3px;
+        margin-right: 1px;
+    }
+
+    nav ul li {
+        padding: 2px;
+        margin-right: 30px;
+        }
+
+    nav {
+        height: 95px;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    header {
+        height: 450px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    header h1 {
+        font-size: 36px;
+        padding: 80px 5px 5px 5px;
+    }
+
+    .full-article-main {
+        width: 98%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .article {
+        height: 300px;
+        width: 99%;
+    }
+
+    .image-article {
+        height: 93%;
+        width: 35%;
+    }
+
+    .image-full-article {
+        height: 400px;
+        width: 60%;
+    }
+
+    input {
+        padding: 5px;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    nav ul li {
+        padding: 4px;
+        margin-right: 25px;
+    }
+
+    nav {
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1201px)  {
+    header {
+        height: 680px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    header h1 {
+        font-size: 52px;
+        padding: 120px 10px 10px 10px;
+    }
+
+    .full-article-main {
+        width: 79%;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    .article {
+        height: 220px;
+        width: 510px;
+    }
+
+    .image-article {
+        height: 93%;
+        width: 40%;
+    }
+
+    .image-full-article {
+        height: 400px;
+        width: 40%;
+    }
+
+    input {
+        padding: 10px;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    nav ul li {
+        padding: 7px;
+        margin-right: 50px;
+    }
+
+    nav {
+        height: 80px;
+    }
+}
+
+nav, img, nav input, header, aside, .full-article, .article, .full-article-main, .content-main-more, footer {
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+nav, img, nav input, .article, .full-article, .content-main-more, footer {
+    border: 1px solid black;
+}
+
+nav, footer {
+    background-color: #000000;
+    opacity: 1.5;
+}
+
+aside ul li, .article, .content-main-more {
+    background-color: #FF4500;
+    opacity: 1.6;
+}
+
+footer p, nav ul li a, aside ul li a, .article p, .article p a, h3 a, .next-link a {
+    color: white;
+}
+
+header, .sub-container, img, .full-article-main, footer {
+    margin-top: 1px;
+}
+
+body {
+    margin: 0;
+    font-family: Times;
+    line-height: 1.5;
+}
+
+input {
+    float: right;
+    font-style: italic;
+}
+
+input, .image-article, .img-one, .img-two, .img-three, .img-four, ul li, .tags-list li, .text-article h1, footer {
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-image: url('images/listening-music.jpg');
+    border: 1px solid transparent;
+    background-position: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.image-article, .image-full-article, .img-one, .img-two, .img-three, .img-four {
+    background-size: 100%;
+    background-position: center;
+}
+
+header h1 {
+    float: center;
+    clear: both;
+    color: white;
+}
+
+
+.sub-container {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+
+aside {
+    padding: 2px 0px 2px 0px;
+    float: left;
+    clear: right;
+    margin-bottom: 1px;
+}
+
+aside ul li, nav, .next-link a, .article {
+    padding: 2px 4px 2px 4px;
+}
+
+.main {
+    float: right;
+}
+
+
+.content-main {
+    float: left;
+    clear: right;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border: 1px solid transparent;
+}
+
+.article {
+    margin-top: 4px;
+}
+
+.article-one {
+    float: top;
+    clear: both;
+}
+
+.article-two {
+    float: bottom;
+    clear: both;
+}
+
+.full-article {
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+}
+
+.full-article-main {
+    margin-left: 5px;
+    float: left;
+    clear: right;
+}
+
+.content-main-more {
+    float: bottom;
+    clear: both;
+    margin-bottom: 1px;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+h3 a, .next-link a {
+    text-decoration: underline;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav ul {
+    float: left;
+    clear: right;
+}
+
+nav ul li {
+    margin-left: -35px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+}
+aside ul li, nav ul li, .tags-list li {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+aside ul li {
+    margin-left: -40px;
+    float: center;
+    clear: both;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.next-link {
+    text-align: right;
+}
+
+footer {
+    float: bottom;
+    clear: both;
+}
+
+.image-article {
+    margin-right: 5px;
+    float: left;
+    clear: right;
+}
+
+.tags-list li {
+    padding: 1px 2px 1px 2px;
+    display: inline-block;
+}
+
+.text-article p {
+    text-align: justify;
+}
+
+.text-article h1 {
+    text-decoration: underline;
+    color: #FF4500;
+}
+
+.text-article a, .tags-list a {
+    color: #FF4500;
+}
+
+.text-article {
+    padding: 3px 5px 3px 5px;
+    color: #000000;
+}
+
+.image-full-article {
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin: 2px 5px 5px 2px;
+    float: left;
+    clear: right;
+}
+
+.img-one {
+    background-image: url('images/simone-simaria.jpg');
+}
+
+.img-two {
+    background-image: url('images/revival-eminem.jpg');
+}
+
+.img-three {
+    background-image: url('images/shape-of-you.jpg');
+}
+
+.img-four {
+    background-image: url('images/synthesis.jpg');
+}
+
