@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OStockMAnager | Recuperação de senha</title>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+			 href="{% static 'styles/bootstrap.css' %}">
+		<link rel="stylesheet"
+			 href="{% static 'styles/main.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Recupere sua senha</h1>
+            </header>
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" class="form-control"
+                           name="email"
+                           required = "required"
+                           placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label>Perfil</label>
+                    <select class="form-control" name="perfil" required="required">
+                        <option selected>Empresa</option>
+                        <option>Funcionario</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Enviar solicitação</button>
+                </div>
+            </form>
+            <p>
+                <a class="text-justify" href="{% url 'pagina_inicial' %}">Página inicial</a>
+            </p>
+        </div>
+    </body>
+</html>

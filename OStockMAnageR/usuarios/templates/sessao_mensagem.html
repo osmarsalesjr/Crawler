@@ -1,0 +1,34 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OStockMAnageR</title>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+			 href="{% static 'styles/bootstrap.css' %}">
+		<link rel="stylesheet"
+			 href="{% static 'styles/main.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav">
+                <a class="navbar-brand" href="{% url 'pagina_inicial' %}">OStockMAnager</a>
+            </nav>
+            <header class="header">
+                <h1>OStockMAnageR</h1>
+            </header>
+            <div class="row">
+                <h2>{{mensagem}}</h2>
+                <p>
+                    <a class="text-justify" href="{% url 'pagina_inicial' %}">Página inicial</a>
+                </p>
+            </div>
+            <footer class="row">
+                <p>&copy 2018 OsMusical News.</p>
+            </footer>
+        </div>
+    </body>
+</html>

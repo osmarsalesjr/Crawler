@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OStockMAnager | Atualização de senha</title>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+			 href="{% static 'styles/bootstrap.css' %}">
+		<link rel="stylesheet"
+			 href="{% static 'styles/main.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Atualização de senha</h1>
+                <h2>Numeração: {{codigo}}</h2>
+            </header>
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label>Crie uma nova senha</label>
+                    <input type="password" class="form-control"
+                           name="nova_senha"
+                           required = "required"
+                           minlength="6"
+                           placeholder="Crie uma nova senha com no minimo 6 digitos">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Enviar solicitação</button>
+                </div>
+            </form>
+            <p>
+                <a class="text-justify" href="{% url 'pagina_inicial' %}">Página inicial</a>
+            </p>
+        </div>
+    </body>
+</html>
