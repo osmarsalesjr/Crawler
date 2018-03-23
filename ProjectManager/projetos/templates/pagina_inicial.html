@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="col-lg-12"> 		
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Meus projetos</strong>
+		</div>
+        <p>
+            <a href="{% url 'criar_projeto' %}">Criar projeto</a>
+        </p>
+        {% if mensagem %}
+            <p>{{mensagem}}</p>
+        {% endif %}
+		{% if projetos %}
+		<ul class="list-group">
+			{% for projeto in projetos %}
+				<li class="list-group-item">
+					<p>Projeto: {{projeto.descricao}}</p>
+                    <p>Data Inicial: {{projeto.data_inicial}}</p>
+                    <p>Data Inicial: {{projeto.prazo_previsto}}</p>
+
+                    {% if projeto.administrador = perfil %}
+                        <a href="{% url 'excluir_projeto' %}">Excluir grupo</a>
+                    {% endif %}
+				</li>
+			{% endfor %}
+		{% else %}	
+			<p>Você não é participante de nenhum projeto</p>
+		{% endif %}
+		</ul>
+	</div>
+</div>
+{% endblock %}
